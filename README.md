@@ -6,7 +6,7 @@
 ![Overview of Small Language Models](images/overview_structure.png)
 
 ## Timeline of SLMs
-![Timeline of Small Language Models](images/timeline_of_small_language_models.png)
+![Timeline of Small Language Models](images/timeline.png)
 
 
 
