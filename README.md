@@ -54,6 +54,7 @@
 | FlanT5 | 80M; 250M; 780M; 3B | 2022.10 | Instruction Tuning | Generic | [Gihub](https://github.com/google-research/t5x/blob/main/docs/models.md#flan-t5-checkpoints) | [HF](https://huggingface.co/google/flan-t5-xxl) | [Paper](https://arxiv.org/abs/2210.11416) |
 | T5 | 60M; 220M; 770M; 3B; 11B | 2019.9 | Pre-train | Generic | [Github](https://github.com/google-research/text-to-text-transfer-transformer)   | [HF](https://huggingface.co/google/t5-v1_1-base) | [Paper](https://arxiv.org/abs/1910.10683) |
 
+<!--
 ## Table of Contents
 
 - [SLM Survey](#slm-survey)
@@ -79,7 +80,7 @@
     - [On-device Deployment Optimization Techniques](#on-device-deployment-optimization-techniques) 
       - [Memory Efficiency Optimization](#memory-efficiency-optimization)
       - [Runtime Efficiency Optimization](#runtime-efficiency-optimization)
-
+-->
 ### SLMs enhance LLMs
 #### SLMs for LLMs Calibration
 
