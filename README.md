@@ -1,5 +1,8 @@
 # SLM Survey
 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![](https://img.shields.io/badge/PaperNumber-152-brightgreen) ![](https://img.shields.io/badge/PRs-Welcome-red) 
+
+
 ## A Comprehensive Survey of Small Language Models: Technology, On-Device Applications, Efficiency, Enhancements for LLMs, and Trustworthiness
 
 ## Overview of SLMs
@@ -45,7 +48,7 @@
 | Megatron-gpt2 | 355M; 2.5B; 8.3B | 2019.9  | Pre-train | Generic | [Github](https://github.com/NVIDIA/Megatron-LM) | [Paper](https://arxiv.org/abs/1909.08053), [Blog](https://huggingface.co/docs/accelerate/en/usage_guides/megatron_lm) |
 | MINITRON | 4B; 8B; 15B | 2024.7 | Pruning and Distillation | Generic | [HF](https://huggingface.co/nvidia/Llama-3.1-Minitron-4B-Width-Base)| [Paper](https://arxiv.org/abs/2407.14679) |
 | Orca 2 | 7B | 2023.11 | Distillation | Generic | [HF](https://huggingface.co/microsoft/Orca-2-7b) |[Paper](https://arxiv.org/abs/2311.11045) |
-| Dolly-v2 | 3B; 7B; 12B | 2023.4 | Instruction tuning | Generic | [Code](https://huggingface.co/databricks/dolly-v1-6b) | [Blog](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm) |
+| Dolly-v2 | 3B; 7B; 12B | 2023.4 | Instruction tuning | Generic | [HF](https://huggingface.co/databricks/dolly-v1-6b) | [Blog](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm) |
 | LaMini-LM | 61M-7B | 2023.4 | Distillation | Generic | [HF](https://huggingface.co/databricks/dolly-v1-6b) | [Blog](https://www.databricks.com/blog/2023/04/12/dolly-first-open-commercially-viable-instruction-tuned-llm) |
 | Specialized FlanT5 | 250M; 760M; 3B | 2023.1 | Instruction Tuning | Generic (math) | - | [Paper](https://proceedings.mlr.press/v202/fu23d.html) |
 | FlanT5 | 80M; 250M; 780M; 3B | 2022.10 | Instruction Tuning | Generic | [HF](https://huggingface.co/google/flan-t5-xxl) | [Paper](https://arxiv.org/abs/2210.11416) |
