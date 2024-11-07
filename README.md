@@ -4,6 +4,7 @@
 
 
 ## A Comprehensive Survey of Small Language Models: Technology, On-Device Applications, Efficiency, Enhancements for LLMs, and Trustworthiness
+Read the full paper here: [Paper Link](https://arxiv.org/abs/2411.03350)
 
 ## Overview of SLMs
 ![Overview of Small Language Models](images/overview_structure.png)
