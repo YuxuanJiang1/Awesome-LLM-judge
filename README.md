@@ -11,7 +11,7 @@ This repo include the papers discussed in our latest survey paper on small langu
 * 2024/11/04: The first version of our survey is on Arxiv!
 
 ## Reference
-If our survey is useful for your research, please kindly cite our [paper](https://arxiv.org/abs/2304.01391):
+If our survey is useful for your research, please kindly cite our [paper](https://arxiv.org/abs/2411.03350):
 ```
 @article{wang2024comprehensive,
   title={A Comprehensive Survey of Small Language Models in the Era of Large Language Models: Techniques, Enhancements, Applications, Collaboration with LLMs, and Trustworthiness},
