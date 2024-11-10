@@ -1,10 +1,25 @@
 # SLM Survey
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![](https://img.shields.io/badge/PaperNumber-152-brightgreen) ![](https://img.shields.io/badge/PRs-Welcome-red) 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![](https://img.shields.io/badge/PaperNumber-152-brightgreen) ![](https://img.shields.io/badge/PRs-Welcome-red)
 
 
 ## A Comprehensive Survey of Small Language Models: Technology, On-Device Applications, Efficiency, Enhancements for LLMs, and Trustworthiness
-Read the full paper here: [Paper Link](https://arxiv.org/abs/2411.03350)
+This repo include the papers discussed in our latest survey paper on small language models.    
+:book: Read the full paper here: [Paper Link](https://arxiv.org/abs/2411.03350)
+
+## News
+* 2024/11/04: The first version of our survey is on Arxiv!
+
+## Reference
+If our survey is useful for your research, please kindly cite our [paper](https://arxiv.org/abs/2304.01391):
+```
+@article{wang2024comprehensive,
+  title={A Comprehensive Survey of Small Language Models in the Era of Large Language Models: Techniques, Enhancements, Applications, Collaboration with LLMs, and Trustworthiness},
+  author={Wang, Fali and Zhang, Zhiwei and Zhang, Xianren and Wu, Zongyu and Mo, Tzuhao and Lu, Qiuhao and Wang, Wanjing and Li, Rui and Xu, Junjie and Tang, Xianfeng and others},
+  journal={arXiv preprint arXiv:2411.03350},
+  year={2024}
+}
+```
 
 ## Overview of SLMs
 ![Overview of Small Language Models](images/overview_structure.png)
@@ -219,7 +234,9 @@ Read the full paper here: [Paper Link](https://arxiv.org/abs/2411.03350)
 2. <u>LLMCad</u>: **"LLMCad: Fast and Scalable On-device Large Language Model Inference"**. *Daliang Xu et al.*  2023. [[Paper](https://arxiv.org/abs/2309.04255)]
 3. <u>LinguaLinked</u>: **"LinguaLinked: A Distributed Large Language Model Inference System for Mobile Devices"**. *Junchen Zhao et al.*  2023 [[Paper](https://arxiv.org/abs/2312.00388)]
 
+## Star History
 
+![Star History Chart](https://api.star-history.com/svg?repos=FairyFali/SLMs-Survey&type=Date)
 
 <!-- Insertion Template: 0. <u>Model</u>: **"Title"**. *Name et al.*  202X. [[Paper]()] [[Github]()] [[HuggingFace]()] -->
 
