@@ -226,7 +226,7 @@ If our survey is useful for your research, please kindly cite our [paper](https:
 7. <u>GEAR</u>: **"GEAR: An Efficient KV Cache Compression Recipe for Near-Lossless Generative Inference of LLM"**. *Hao Kang et al.*  2024. [[Paper](https://arxiv.org/abs/2403.05527)] [[Github](https://github.com/opengear-project/GEAR)]
 8. <u>DMC</u>: **"Dynamic Memory Compression: Retrofitting LLMs for Accelerated Inference"**. *Name et al.*  202X. [[Paper](https://arxiv.org/abs/2403.09636)]
 9. <u>Transformer-Lite</u>: **"Transformer-Lite: High-efficiency Deployment of Large Language Models on Mobile Phone GPUs"**. *Luchang Li et al.*  202X. [[Paper](https://arxiv.org/abs/2403.20041)]
-10. <u>LLMaaS</u>: **"Wangsong Yin"**. *Piotr Nawrot et al.*  2024. [[Paper](https://arxiv.org/abs/2403.11805)]
+10. <u>LLMaaS</u>: **"LLM as a System Service on Mobile Devices"**. *Wangsong Yin et al.*  2024. [[Paper](https://arxiv.org/abs/2403.11805)]
 
 #### Runtime Efficiency Optimization
 
