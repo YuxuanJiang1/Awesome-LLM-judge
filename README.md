@@ -97,57 +97,42 @@ If our survey is useful for your research, please kindly cite our [paper](https:
       - [Memory Efficiency Optimization](#memory-efficiency-optimization)
       - [Runtime Efficiency Optimization](#runtime-efficiency-optimization)
 -->
-### SLMs enhance LLMs
-#### SLMs for LLMs Calibration
+### SLM Architecture
 
-1. **Calibrating Large Language Models Using Their Generations Only.** *Dennis Ulmer, Martin Gubri, Hwaran Lee, Sangdoo Yun, Seong Joon Oh*. ACL 2024 Long, [[pdf]](https://aclanthology.org/2024.acl-long.824/) [[code]](https://github.com/parameterlab/apricot)
-2. **Pareto Optimal Learning for Estimating Large Language Model Errors.** *Theodore Zhao, Mu Wei, J. Samuel Preston, Hoifung Poon*. ACL 2024 Long, [[pdf]](https://aclanthology.org/2024.acl-long.566/)
-3. **The Internal State of an LLM Knows When It’s Lying.** *Amos Azaria, Tom Mitchell*. EMNLP 2023 Findings. [[pdf]](https://aclanthology.org/2023.findings-emnlp.68/)
-#### SLMs for LLMs RAG
-1. **Small Models, Big Insights: Leveraging Slim Proxy Models To Decide When and What to Retrieve for LLMs.** *Jiejun Tan, Zhicheng Dou, Yutao Zhu, Peidong Guo, Kun Fang, Ji-Rong Wen.* ACL 2024 Long.  [[pdf]](https://aclanthology.org/2024.acl-long.242/) [[code]](https://github.com/plageon/SlimPlm) [[huggingface]](https://huggingface.co/zstanjj/SlimPLM-Query-Rewriting)
-2. **Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection.** *Akari Asai, Zeqiu Wu, Yizhong Wang, Avirup Sil, Hannaneh Hajishirzi.* ICLR 2024 Oral. [[pdf]](https://openreview.net/forum?id=hSyW5go0v8) [[huggingface]](https://huggingface.co/papers/2310.11511) [[code]](https://github.com/AkariAsai/self-rag) [[website]](https://selfrag.github.io/) [[model]](https://huggingface.co/selfrag/selfrag_llama2_7b) [[data]](https://huggingface.co/datasets/selfrag/selfrag_train_data) 
-3. **LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression.** *Huiqiang Jiang, Qianhui Wu, Xufang Luo, Dongsheng Li, Chin-Yew Lin, Yuqing Yang, Lili Qiu.* ICLR 2024 Workshop ME-FoMo Poster. [[pdf]](https://openreview.net/forum?id=9YvfRrpmyw) 
-4. **Corrective Retrieval Augmented Generation.** *Shi-Qi Yan, Jia-Chen Gu, Yun Zhu, Zhen-Hua Ling.* arXiv 2024.1. [[pdf]](https://arxiv.org/abs/2401.15884) [[code]](https://github.com/HuskyInSalt/CRAG)
-5. **Self-Knowledge Guided Retrieval Augmentation for Large Language Models.** *Yile Wang, Peng Li, Maosong Sun, Yang Liu.* EMNLP 2023 Findings. [[pdf]](https://aclanthology.org/2023.findings-emnlp.691/) [[code]](https://github.com/THUNLP-MT/SKR)
-6.  **In-Context Retrieval-Augmented Language Models.** *Ori Ram, Yoav Levine, Itay Dalmedigos, Dor Muhlgay, Amnon Shashua, Kevin Leyton-Brown, Yoav Shoham.* TACL 2023. [[pdf]](https://aclanthology.org/2023.tacl-1.75/) [[code]](https://github.com/AI21Labs/in-context-ralm)
+1. Transformer: **Attention is all you need.** *Ashish Vaswani*. NeurIPS 2017. 
+2. Mamba 1: **Mamba: Linear-time sequence modeling with selective state spaces.** *Albert Gu and Tri Dao*. COLM 2024.  [[Paper]](https://openreview.net/forum?id=tEYskw1VY2#discussion).
+3. Mamba 2: **Transformers are SSMs: Generalized models and efficient algorithms through structured state space duality.** *Tri Dao and Albert Gu*. ICML 2024. [[Paper]](https://openreview.net/forum?id=ztn8FCR1td) [[Code]](https://github.com/state-spaces/mamba)
 
-### Foundational Concepts in Building Language Models
 
-1. <u>SqueezeLLM</u>: **"SqueezeLLM: Dense-and-Sparse Quantization"**. *Sehoon Kim et al.* ICML 2024. [[Paper](https://arxiv.org/abs/2306.07629)] [[Github](https://github.com/SqueezeAILab/SqueezeLLM)]
-2. <u>JSQ</u>: **"Compressing Large Language Models by Joint Sparsification and Quantization"**. *Jinyang Guo et al.* PMLR 2024. [[Paper](https://proceedings.mlr.press/v235/guo24g.html)] [[Github](https://github.com/uanu2002/JSQ)]
-3. <u>FrameQuant</u>: **"FrameQuant: Flexible Low-Bit Quantization for Transformers"**. *Harshavardhan Adepu et al.* 2024. [[Paper](https://arxiv.org/abs/2403.06082)] [[Github](https://github.com/vsingh-group/FrameQuant)]
-4. <u>OneBit</u>: **"OneBit: Towards Extremely Low-bit Large Language Models"**. *Yuzhuang Xu et al.* NeurIPS 2024. [[Paper](https://arxiv.org/abs/2402.11295)]
-5. <u>BiLLM</u>: **"BiLLM: Pushing the Limit of Post-Training Quantization for LLMs"**. *Wei Huang et al.* 2024. [[Paper](https://arxiv.org/abs/2402.04291)] [[Github](https://github.com/Aaronhuang-778/BiLLM)]
-6. <u>LQER</u>: **"LQER: Low-Rank Quantization Error Reconstruction for LLMs"**. *Cheng Zhang et al.* ICML 2024. [[Paper](https://arxiv.org/abs/2402.02446)] [[Github](https://github.com/ChengZhang-98/lqer)]
-7. <u>I-LLM</u>: **"I-LLM: Efficient Integer-Only Inference for Fully-Quantized Low-Bit Large Language Models"**. *Xing Hu et al.* 2024. [[Paper](https://arxiv.org/abs/2405.17849)] [[Github](https://anonymous.4open.science/r/I-LLM-F242/README.md)]
-8. <u>PV-Tuning</u>: **"PV-Tuning: Beyond Straight-Through Estimation for Extreme LLM Compression"**. *Vladimir Malinovskii et al.* 2024. [[Paper](https://arxiv.org/abs/2405.14852)]
-9. <u>BitNet</u>: **"BitNet: Scaling 1-bit Transformers for Large Language Models"**. *Hongyu Wang et al.* 2023. [[Paper](https://arxiv.org/abs/2310.11453)]
-10. <u>BitNet b1.58</u>: **"The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits"**. *Shuming Ma et al.* 2024. [[Paper](https://arxiv.org/abs/2402.17764)]
-11. <u>PEQA</u>: **"Memory-efficient fine-tuning of compressed large language models via sub-4-bit integer quantization"**. *Jeonghoon Kim et al.* NIPS 2023. [[Paper](https://dl.acm.org/doi/10.5555/3666122.3667691)]
-12. <u>QLoRA</u>: **"QLORA: efficient finetuning of quantized LLMs"**. *Tim Dettmers et al.* NIPS 2023. [[Paper](https://dl.acm.org/doi/abs/10.5555/3666122.3666563)] [[Github](https://github.com/artidoro/qlora)]
-  
-
-### Advanced enhancement methods for SLM
+### Enhancement for SLM
 
 #### Training from scratch
 
-1. <u>MindLLM</u>: **"MindLLM: Pre-training Lightweight Large Language Model from Scratch, Evaluations and Domain Applications"**. *Yizhe Yang et al.* 2023. [[Paper](https://arxiv.org/abs/2310.15777)] [[HuggingFace](https://huggingface.co/bit-dny/MindLLM-1b3-chat-zh-v2.0)]
-2. <u>MobiLlama</u>: **"MobiLlama: Towards Accurate and Lightweight Fully Transparent GPT"**. *Omkar Thawakar et al.* 2024. [[Paper](https://arxiv.org/abs/2402.16840)] [[Github](https://github.com/mbzuai-oryx/MobiLlama)] [[HuggingFace](https://huggingface.co/collections/MBZUAI/mobillama-65dd4182d588c91e8230332e)]
-3. <u>MobileLLM</u>: **"MobileLLM: Optimizing Sub-billion Parameter Language Models for On-Device Use Cases"**. *Zechun Liu et al.* ICML 2024. [[Paper](https://arxiv.org/abs/2402.14905)] [[Github](https://github.com/facebookresearch/MobileLLM)] [[HuggingFace](https://huggingface.co/papers/2402.14905)]
+1. <u>MobiLlama</u>: **"MobiLlama: Towards Accurate and Lightweight Fully Transparent GPT"**. *Omkar Thawakar, Ashmal Vayani, Salman Khan, Hisham Cholakal, Rao M. Anwer, Michael Felsberg, Tim Baldwin, Eric P. Xing, Fahad Shahbaz Khan.* arXiv 2024. [[Paper](https://arxiv.org/abs/2402.16840)] [[Github](https://github.com/mbzuai-oryx/MobiLlama)] [[HuggingFace](https://huggingface.co/collections/MBZUAI/mobillama-65dd4182d588c91e8230332e)]
+2. <u>MobileLLM</u>: **"MobileLLM: Optimizing Sub-billion Parameter Language Models for On-Device Use Cases"**. *Zechun Liu, Changsheng Zhao, Forrest Iandola, Chen Lai, Yuandong Tian, Igor Fedorov, Yunyang Xiong, Ernie Chang, Yangyang Shi, Raghuraman Krishnamoorthi, Liangzhen Lai, Vikas Chandra* ICML 2024. [[Paper](https://arxiv.org/abs/2402.14905)] [[Github](https://github.com/facebookresearch/MobileLLM)] [[HuggingFace](https://huggingface.co/papers/2402.14905)]
+3. **Rethinking optimization and architecture for tiny language models.** *Yehui Tang, Fangcheng Liu, Yunsheng Ni, Yuchuan Tian, Zheyuan Bai, Yi-Qi Hu, Sichao Liu, Shangling Jui, Kai Han, and Yunhe Wang.* ICML 2024. [[Paper]](https://openreview.net/forum?id=mHIEOZtDDF) [[Code]](https://github.com/YuchuanTian/RethinkTinyLM)
+4. <u>MindLLM</u>: **"MindLLM: Pre-training Lightweight Large Language Model from Scratch, Evaluations and Domain Applications"**. *Yizhe Yang, Huashan Sun, Jiawei Li, Runheng Liu, Yinghao Li, Yuhang Liu, Heyan Huang, Yang Gao*. arXiv 2023. [[Paper](https://arxiv.org/abs/2310.15777)] [[HuggingFace](https://huggingface.co/bit-dny/MindLLM-1b3-chat-zh-v2.0)]
 
 
 #### Supervised fine-tuning
 
-1. <u>MobileBERT</u>: **"MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices"**. *Zhiqing Sun et al.* ACL 2020. [[Paper](https://arxiv.org/abs/2004.02984)] [[Github](https://github.com/google-research/google-research/tree/master/mobilebert)] [[HuggingFace](https://huggingface.co/docs/transformers/en/model_doc/mobilebert)]
-2. <u>Alpaca 7B</u>: **"Alpaca: A Strong, Replicable Instruction-Following Model"**. *Rohan Taori et al.* 2023. [[Paper](https://crfm.stanford.edu/2023/03/13/alpaca.html)] [[Github](https://github.com/tatsu-lab/stanford_alpaca)] [[HuggingFace](https://huggingface.co/tatsu-lab/alpaca-7b-wdiff)]
-3. <u>RLHF</u>: **"Training language models to follow instructions with human feedback"**. *Long Ouyang et al.* 2022. [[Paper](https://arxiv.org/abs/2203.02155)]
-4. <u>DPO</u>: **"Direct Preference Optimization: Your Language Model is Secretly a Reward Model"**. *Rafael Rafailov et al.* 2024. [[Paper](https://arxiv.org/abs/2305.18290)]
+1. **Direct preference optimization: Your language model is secretly a reward model.** *Rafael Rafailov, Archit Sharma, Eric Mitchell, Christopher D Manning, Stefano Ermon, and Chelsea Finn.* NeurIPS, 2024. [[Paper](https://arxiv.org/abs/2305.18290)] [[Code]](https://github.com/eric-mitchell/direct-preference-optimization)
+2. **Enhancing chat language models by scaling high-quality instructional conversations.** *Ning Ding, Yulin Chen, Bokai Xu, Yujia Qin, Zhi Zheng, Shengding Hu, Zhiyuan Liu, Maosong Sun, and Bowen Zhou.* EMNLP 2023. [[Paper]](https://aclanthology.org/2023.emnlp-main.183/) [[Code]](https://github.com/thunlp/UltraChat)
+3. **SlimOrca: An Open Dataset of GPT-4 Augmented FLAN Reasoning Traces, with Verification.** *Wing Lian, Guan Wang, Bleys Goodson, Eugene Pentland, Austin Cook, Chanvichet Vong, and "Teknium".* Huggingface, 2023. [[Data]](https://huggingface.co/datasets/Open-Orca/SlimOrca)
+4. **Stanford Alpaca: An Instruction-following LLaMA model.** *Rohan Taori, Ishaan Gulrajani, Tianyi Zhang, Yann Dubois, Xuechen Li, Carlos Guestrin, Percy Liang, and Tatsunori B. Hashimoto.* GitHub, 2023. [[Blog](https://crfm.stanford.edu/2023/03/13/alpaca.html)] [[Github](https://github.com/tatsu-lab/stanford_alpaca)] [[HuggingFace](https://huggingface.co/tatsu-lab/alpaca-7b-wdiff)]
+5. **OpenChat: Advancing Open-source Language Models with Mixed-Quality Data.** *Guan Wang, Sijie Cheng, Xianyuan Zhan, Xiangang Li, Sen Song, and Yang Liu.* ICLR, 2024. [[Paper]](https://openreview.net/forum?id=AOJyfhWYHf) [[Code]](https://github.com/imoneoi/openchat) [[HuggingFace]](https://huggingface.co/openchat)
+6. **Training language models to follow instructions with human feedback.** *Long Ouyang, Jeffrey Wu, Xu Jiang, Diogo Almeida, Carroll Wainwright, Pamela Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, et al.* NeurIPS, 2022. [[Paper]](https://proceedings.neurips.cc/paper_files/paper/2022/hash/b1efde53be364a73914f58805a001731-Abstract-Conference.html)
+7. <u>RLHF</u>: **"Training language models to follow instructions with human feedback"**. *Long Ouyang et al.* 2022. [[Paper](https://arxiv.org/abs/2203.02155)]
+8. <u>MobileBERT</u>: **"MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices"**. *Zhiqing Sun et al.* ACL 2020. [[Paper](https://arxiv.org/abs/2004.02984)] [[Github](https://github.com/google-research/google-research/tree/master/mobilebert)] [[HuggingFace](https://huggingface.co/docs/transformers/en/model_doc/mobilebert)]
+9. **Language models are unsupervised multitask learners.** *Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever, et al.* OpenAI Blog, 2019. [[Paper]](https://insightcivic.s3.us-east-1.amazonaws.com/language-models.pdf)
 
 #### Data quality in KD
 
 1. <u>TinyStory</u>: **"TinyStories: How Small Can Language Models Be and Still Speak Coherent English?"**. *Ronen Eldan et al.* 2023. [[Paper](https://arxiv.org/abs/2305.07759)] [[HuggingFace](https://huggingface.co/papers/2305.07759)]
 2. <u>AS-ES</u>: **"AS-ES Learning: Towards Efficient CoT Learning in Small Models"**. *Nuwa Xi et al.* 2024. [[Paper](https://arxiv.org/abs/2403.01969)]
 3. <u>Self-Amplify</u>: **"Self-AMPLIFY: Improving Small Language Models with Self Post Hoc Explanations"**. *Milan Bhan et al.* 2024. [[Paper](https://arxiv.org/abs/2402.12038)] 
+4. **Large Language Models Can Self-Improve.** *Jiaxin Huang, Shixiang Shane Gu, Le Hou, Yuexin Wu, Xuezhi Wang, Hongkun Yu, and Jiawei Han.* EMNLP 2023. [[Paper]](https://aclanthology.org/2023.emnlp-main.67/) 
+5. **Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing.** *Ye Tian, Baolin Peng, Linfeng Song, Lifeng Jin, Dian Yu, Haitao Mi, and Dong Yu.* NeurIPS 2024. [[Paper]](https://openreview.net/forum?id=tPdJ2qHkOB) [[Code]](https://github.com/YeTianJHU/AlphaLLM)
 
 #### Distillation for SLM
 
@@ -160,18 +145,28 @@ If our survey is useful for your research, please kindly cite our [paper](https:
 1. <u>SmoothQuant</u>: **"SmoothQuant: Accurate and Efficient Post-Training Quantization for Large Language Models"**. *Guangxuan Xiao et al.* ICML 2023. [[Paper](https://arxiv.org/abs/2211.10438)] [[Github](https://github.com/mit-han-lab/smoothquant)]
 2. <u>BiLLM</u>: **"BiLLM: Pushing the Limit of Post-Training Quantization for LLMs"**. *Wei Huang et al.* 2024. [[Paper](https://arxiv.org/abs/2402.04291)] [[Github](https://github.com/Aaronhuang-778/BiLLM)]
 3. <u>LLM-QAT</u>: **"LLM-QAT: Data-Free Quantization Aware Training for Large Language Models"**. *Zechun Liu et al.* 2023. [[Paper](https://arxiv.org/abs/2305.17888)]
-4. <u>PB-LLM</u>: **"PB-LLM: Partially Binarized Large Language Models"**. *Yuzhang Shang et al.* 202X. [[Paper](https://arxiv.org/abs/2310.00034)] [[Github](https://github.com/hahnyuan/PB-LLM)]
+4. <u>PB-LLM</u>: **"PB-LLM: Partially Binarized Large Language Models"**. *Yuzhang Shang et al.* 2024. [[Paper](https://openreview.net/forum?id=BifeBRhikU)] [[Github](https://github.com/hahnyuan/PB-LLM)]
 5. <u>OneBit</u>: **"OneBit: Towards Extremely Low-bit Large Language Models"**. *Yuzhuang Xu et al.* NeurIPS 2024. [[Paper](https://arxiv.org/abs/2402.11295)]
 6. <u>BitNet</u>: **"BitNet: Scaling 1-bit Transformers for Large Language Models"**. *Hongyu Wang et al.* 2023. [[Paper](https://arxiv.org/abs/2310.11453)]
 7. <u>BitNet b1.58</u>: **"The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits"**. *Shuming Ma et al.* 2024. [[Paper](https://arxiv.org/abs/2402.17764)]
+8. <u>SqueezeLLM</u>: **"SqueezeLLM: Dense-and-Sparse Quantization"**. *Sehoon Kim et al.* ICML 2024. [[Paper](https://arxiv.org/abs/2306.07629)] [[Github](https://github.com/SqueezeAILab/SqueezeLLM)]
+9. <u>JSQ</u>: **"Compressing Large Language Models by Joint Sparsification and Quantization"**. *Jinyang Guo et al.* PMLR 2024. [[Paper](https://proceedings.mlr.press/v235/guo24g.html)] [[Github](https://github.com/uanu2002/JSQ)]
+10. <u>FrameQuant</u>: **"FrameQuant: Flexible Low-Bit Quantization for Transformers"**. *Harshavardhan Adepu et al.* 2024. [[Paper](https://arxiv.org/abs/2403.06082)] [[Github](https://github.com/vsingh-group/FrameQuant)]
+11. <u>BiLLM</u>: **"BiLLM: Pushing the Limit of Post-Training Quantization for LLMs"**. *Wei Huang et al.* 2024. [[Paper](https://arxiv.org/abs/2402.04291)] [[Github](https://github.com/Aaronhuang-778/BiLLM)]
+12. <u>LQER</u>: **"LQER: Low-Rank Quantization Error Reconstruction for LLMs"**. *Cheng Zhang et al.* ICML 2024. [[Paper](https://arxiv.org/abs/2402.02446)] [[Github](https://github.com/ChengZhang-98/lqer)]
+13. <u>I-LLM</u>: **"I-LLM: Efficient Integer-Only Inference for Fully-Quantized Low-Bit Large Language Models"**. *Xing Hu et al.* 2024. [[Paper](https://arxiv.org/abs/2405.17849)] [[Github](https://anonymous.4open.science/r/I-LLM-F242/README.md)]
+14. <u>PV-Tuning</u>: **"PV-Tuning: Beyond Straight-Through Estimation for Extreme LLM Compression"**. *Vladimir Malinovskii et al.* 2024. [[Paper](https://arxiv.org/abs/2405.14852)]
+15. <u>PEQA</u>: **"Memory-efficient fine-tuning of compressed large language models via sub-4-bit integer quantization"**. *Jeonghoon Kim et al.* NIPS 2023. [[Paper](https://dl.acm.org/doi/10.5555/3666122.3667691)]
+16. <u>QLoRA</u>: **"QLORA: efficient finetuning of quantized LLMs"**. *Tim Dettmers et al.* NIPS 2023. [[Paper](https://dl.acm.org/doi/abs/10.5555/3666122.3666563)] [[Github](https://github.com/artidoro/qlora)]
 
-#### LLMs for SLM
+#### LLM techniques for SLMs
 
 1. <u>Ma et al.</u>: **"Large Language Model Is Not a Good Few-shot Information Extractor, but a Good Reranker for Hard Samples!"**. *Yubo Ma et al.* EMNLP 2023. [[Paper](https://arxiv.org/abs/2303.08559)] [[Github](https://github.com/mayubo2333/LLM-IE)]
 2. <u>MoQE</u>: **"Mixture of Quantized Experts (MoQE): Complementary Effect of Low-bit Quantization and Robustness"**. *Young Jin Kim et al.* 2023. [[Paper](https://arxiv.org/abs/2310.02410)]
 3. <u>SLM-RAG</u>: **"Can Small Language Models With Retrieval-Augmented Generation Replace Large Language Models When Learning Computer Science?"**. *Suqing Liu et al.* ITiCSE 2024. [[Paper](https://dl.acm.org/doi/10.1145/3649217.3653554)] 
 
 ### Task-specific SLM Applications
+
 #### SLM in QA
 
 1. <u>Alpaca</u>: **"Alpaca: A Strong, Replicable Instruction-Following Model"**. *Rohan Taori et al.*  202X. [[Paper](https://crfm.stanford.edu/2023/03/13/alpaca.html)] [[Github](https://github.com/tatsu-lab/stanford_alpaca)] [[HuggingFace](https://huggingface.co/stabilityai/StableBeluga2)] 
@@ -215,6 +210,7 @@ If our survey is useful for your research, please kindly cite our [paper](https:
 5. <u>On-device Agent for Text Rewriting</u>: **"Towards an On-device Agent for Text Rewriting"**. *Yun Zhu et al.*  2023. [[Paper](https://arxiv.org/abs/2308.11807)]
 
 ### On-device Deployment Optimization Techniques
+
 #### Memory Efficiency Optimization
 
 1. <u>EDGE-LLM</u>: **"EDGE-LLM: Enabling Efficient Large Language Model Adaptation on Edge Devices via Layerwise Unified Compression and Adaptive Layer Tuning and Voting"**. *Zhongzhi Yu et al.*  2024. [[Paper](https://arxiv.org/abs/2406.15758)] [[Github](https://github.com/GATECH-EIC/Edge-LLM)]
@@ -233,6 +229,25 @@ If our survey is useful for your research, please kindly cite our [paper](https:
 1. <u>EdgeMoE</u>: **"EdgeMoE: Fast On-Device Inference of MoE-based Large Language Models"**. *Rongjie Yi et al.*  2023. [[Paper](https://arxiv.org/abs/2308.14352)] [[Github](https://github.com/sharc-lab/Edge-MoE)] 
 2. <u>LLMCad</u>: **"LLMCad: Fast and Scalable On-device Large Language Model Inference"**. *Daliang Xu et al.*  2023. [[Paper](https://arxiv.org/abs/2309.04255)]
 3. <u>LinguaLinked</u>: **"LinguaLinked: A Distributed Large Language Model Inference System for Mobile Devices"**. *Junchen Zhao et al.*  2023 [[Paper](https://arxiv.org/abs/2312.00388)]
+
+### SLMs enhance LLMs
+
+#### SLMs for LLMs Calibration
+
+1. **Calibrating Large Language Models Using Their Generations Only.** *Dennis Ulmer, Martin Gubri, Hwaran Lee, Sangdoo Yun, Seong Joon Oh*. ACL 2024 Long, [[pdf]](https://aclanthology.org/2024.acl-long.824/) [[code]](https://github.com/parameterlab/apricot)
+2. **Pareto Optimal Learning for Estimating Large Language Model Errors.** *Theodore Zhao, Mu Wei, J. Samuel Preston, Hoifung Poon*. ACL 2024 Long, [[pdf]](https://aclanthology.org/2024.acl-long.566/)
+3. **The Internal State of an LLM Knows When It’s Lying.** *Amos Azaria, Tom Mitchell*. EMNLP 2023 Findings. [[pdf]](https://aclanthology.org/2023.findings-emnlp.68/)
+
+#### SLMs for LLMs RAG
+
+1. **Small Models, Big Insights: Leveraging Slim Proxy Models To Decide When and What to Retrieve for LLMs.** *Jiejun Tan, Zhicheng Dou, Yutao Zhu, Peidong Guo, Kun Fang, Ji-Rong Wen.* ACL 2024 Long.  [[pdf]](https://aclanthology.org/2024.acl-long.242/) [[code]](https://github.com/plageon/SlimPlm) [[huggingface]](https://huggingface.co/zstanjj/SlimPLM-Query-Rewriting)
+2. **Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection.** *Akari Asai, Zeqiu Wu, Yizhong Wang, Avirup Sil, Hannaneh Hajishirzi.* ICLR 2024 Oral. [[pdf]](https://openreview.net/forum?id=hSyW5go0v8) [[huggingface]](https://huggingface.co/papers/2310.11511) [[code]](https://github.com/AkariAsai/self-rag) [[website]](https://selfrag.github.io/) [[model]](https://huggingface.co/selfrag/selfrag_llama2_7b) [[data]](https://huggingface.co/datasets/selfrag/selfrag_train_data) 
+3. **LongLLMLingua: Accelerating and Enhancing LLMs in Long Context Scenarios via Prompt Compression.** *Huiqiang Jiang, Qianhui Wu, Xufang Luo, Dongsheng Li, Chin-Yew Lin, Yuqing Yang, Lili Qiu.* ICLR 2024 Workshop ME-FoMo Poster. [[pdf]](https://openreview.net/forum?id=9YvfRrpmyw) 
+4. **Corrective Retrieval Augmented Generation.** *Shi-Qi Yan, Jia-Chen Gu, Yun Zhu, Zhen-Hua Ling.* arXiv 2024.1. [[pdf]](https://arxiv.org/abs/2401.15884) [[code]](https://github.com/HuskyInSalt/CRAG)
+5. **Self-Knowledge Guided Retrieval Augmentation for Large Language Models.** *Yile Wang, Peng Li, Maosong Sun, Yang Liu.* EMNLP 2023 Findings. [[pdf]](https://aclanthology.org/2023.findings-emnlp.691/) [[code]](https://github.com/THUNLP-MT/SKR)
+6. **In-Context Retrieval-Augmented Language Models.** *Ori Ram, Yoav Levine, Itay Dalmedigos, Dor Muhlgay, Amnon Shashua, Kevin Leyton-Brown, Yoav Shoham.* TACL 2023. [[pdf]](https://aclanthology.org/2023.tacl-1.75/) [[code]](https://github.com/AI21Labs/in-context-ralm)
+
+
 
 ## Star History
 
