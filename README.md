@@ -342,9 +342,5 @@ Canada* (2024) [[link]](https://ojs.aaai.org/index.php/AAAI/article/view/29720/3
 - **RAIN: Your Language Models Can Align Themselves without Finetuning.** Li, Yuhui, Wei, Fangyun, Zhao, Jinjing, Zhang, Chao, and Zhang, Hongyang. *The Twelfth International Conference on Learning Representations* (2024) [[link]](https://arxiv.org/pdf/2309.07124)
 - **Rewarding Progress: Scaling Automated Process Verifiers for LLM Reasoning.** Setlur, Amrith, Nagpal, Chirag, Fisch, Adam, Geng, Xinyang, Eisenstein, Jacob, Agarwal, Rishabh, Agarwal, Alekh, Berant, Jonathan, and Kumar, Aviral. *arXiv preprint arXiv:2410.08146* (2024) [[link]](https://arxiv.org/pdf/2410.08146?)
 
-## Star History
-
-![Star History Chart](https://api.star-history.com/svg?repos=FairyFali/SLMs-Survey&type=Date)
-
 <!-- Insertion Template: 0. <u>Model</u>: **"Title"**. *Name et al.*  202X. [[Paper]()] [[Github]()] [[HuggingFace]()] -->
 
